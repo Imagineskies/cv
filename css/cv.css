@@ -1,0 +1,140 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+body {
+  font-family: "Fa Brands", "Fa Regular", "fa Solid", "Nunito Bold", "Nunito", "Varela Round", Georgia, "Times New Roman", serif;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-moz-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-moz-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+    body {
+      margin: 0;
+    }
+
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.shown {
+  visibility: visible;
+}
+
+.overshown {
+  overflow-y: scroll;
+}
+
+.overhidden {
+  overflow: hidden;
+}
+
+hr {
+  width: 100%;
+  border-width: 3px;
+  border-color: #291d07;
+}
+
+/*____________________________________________________________________________________*/
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url(../img/cv.png);
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header h2 {
+  margin-top: 25px;
+  font-family: "Nunito Bold";
+  font-size: 2rem;
+  color: #B4AA97;
+}
+
+header.masthead p {
+  font-weight: 300;
+  color: #B4AA97;
+}
+hr {
+  width: 150px;
+  border-width: 3px;
+  border-color: #291d07;
+}
+
+/*____________________________________________________________________________________*/
+/*____________________________________________________________________________________*/
+/* Headings */
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  float: none;
+  color: #B4AA97
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: inherit;
+}
+
+.h1, h1 {
+  font-size: 36px;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 4px;
+}
+
+.h2, h2 {
+  font-size: 32px;
+}
+
+.h3, h3 {
+  font-size: 28px;
+  padding: 10px 0px 5px 5px;
+}
+
+.h4, h4 {
+  font-size: 24px;
+}
+
+.h5, h5 {
+  font-size: 20px;
+}
+
+.h6, h6 {
+  font-size: 16px;
+}
