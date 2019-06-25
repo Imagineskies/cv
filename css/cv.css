@@ -1,13 +1,12 @@
 body, html {
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
+  background: url(../img/background.png);
+  background-position: center center;
+  background-size: cover;
   color: #000000;
 }
 
-body {
-  font-family: "Fa Brands", "Fa Regular", "fa Solid", "Nunito Bold", "Nunito", "Varela Round", Georgia, "Times New Roman", serif;
-}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -40,13 +39,10 @@ body {
   background: #555;
 }
 
-    body {
-      margin: 0;
-    }
-
 ::-moz-scrollbar-thumb:hover {
   background: #555;
 }
+
 .hidden {
   visibility: hidden;
 }
@@ -68,73 +64,187 @@ hr {
   border-width: 3px;
   border-color: #291d07;
 }
-
 /*____________________________________________________________________________________*/
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url(../img/cv.png);
-  background-position: center center;
-  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
+
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-header h2 {
+
+header h1 {
   margin-top: 25px;
-  font-family: "Nunito Bold";
-  font-size: 2rem;
-  color: #B4AA97;
+  font-family: 'Permanent Marker', cursive;
+  color: #000000;
+  opacity: .98;
 }
 
 header.masthead p {
   font-weight: 300;
-  color: #B4AA97;
+  color: #000000;
 }
+
+header a {
+  margin: 0 25px;
+  font-size: 32px;
+}
+/*____________________________________________________________________________________*/
+/* Sections */
+#projects, #about, #contacts {
+  z-index: 5;
+  background-color: #FFFFFF;
+  height: auto;
+}
+#projects * {
+  text-align: center;
+}
+/* Projects */
+.projectOneTitle {
+   display: none;
+}
+.projectTwoTitle {
+  display: none;
+}
+.projectThreeTitle {
+   display: none;
+}
+.projectFourTitle {
+  display: none;
+}
+.projectFiveTitle {
+   display: none;
+}
+.projectSixTitle {
+  display: none;
+}
+@media (max-width:719px){
+  .projectOneTitle {
+     display: initial;
+  }
+  .projectTwoTitle {
+    display: initial;
+  }
+  .projectThreeTitle {
+     display: initial;
+  }
+  .projectFourTitle {
+    display: initial;
+  }
+  .projectFiveTitle {
+     display: initial;
+  }
+  .projectSixTitle {
+    display: initial;
+  }
+}
+/*____________________________________________________________________________________*/
+/* footer */
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  width: 100%;
+  height: auto;
+}
+
+
+/*____________________________________________________________________________________*/
+/* Backgrounds */
+
+.backgroundsOne {
+  background: url(../img/background-black-and-white-black-and-white-963278.jpg);
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+  z-index: 3;
+}
+.backgroundsTwo {
+  background: url(../img/background-black-and-white-black-and-white-963278.jpg);
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+  z-index: 3;
+}
+/*____________________________________________________________________________________*/
 hr {
   width: 150px;
   border-width: 3px;
   border-color: #291d07;
 }
-
-/*____________________________________________________________________________________*/
-/*____________________________________________________________________________________*/
-/* Headings */
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  float: none;
-  color: #B4AA97
+ul, li {
+  list-style: none;
+}
+.mx-auto {
+  text-align: center;
 }
 
+/*____________________________________________________________________________________*/
+/* @media */
+@media (max-width: 719px) {
+  header a {
+    margin: 25px 0;
+    font-size: 32px;
+    display: block;
+  }
+}
+
+/*____________________________________________________________________________________*/
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*____________________________________________________________________________________*/
+/* Text */
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p {
+  color: #000000;
+  padding: 15px;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
 h1, h2, h3, h4, h5, h6 {
-  text-align: inherit;
+  font-family: 'Vidaloka', serif;
 }
 
 .h1, h1 {
-  font-size: 36px;
-  text-align: center;
-  padding: 10px;
-  letter-spacing: 4px;
+  font-size: 72px;
 }
 
 .h2, h2 {
-  font-size: 32px;
+  font-size: 60px;
 }
 
 .h3, h3 {
-  font-size: 28px;
-  padding: 10px 0px 5px 5px;
+  font-size: 48px;
 }
 
 .h4, h4 {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .h5, h5 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .h6, h6 {
+  font-size: 20px;
+}
+
+.p, p {
   font-size: 16px;
+  font-family: 'Raleway', sans-serif;
 }
