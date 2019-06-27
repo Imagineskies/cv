@@ -64,6 +64,7 @@ hr {
   border-width: 3px;
   border-color: #291d07;
 }
+
 /*____________________________________________________________________________________*/
 header.masthead {
   padding-top: 10rem;
@@ -93,6 +94,7 @@ header a {
   margin: 0 25px;
   font-size: 32px;
 }
+
 /*____________________________________________________________________________________*/
 /* Sections */
 #projects, #about, #contacts {
@@ -100,48 +102,94 @@ header a {
   background-color: #FFFFFF;
   height: auto;
 }
-#projects * {
+
+#projects *, #about *, #contacts * {
   text-align: center;
 }
+hr {
+  width: 100%;
+  border-width: 5px;
+  border-color: #000000;
+  border-style: double;
+}
+/*____________________________________________________________________________________*/
+/* Resume */
+#resume {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
+}
+.resumeSubTitles {
+  color: #2079c7;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.resumeSubTitlesClass {
+  color: #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.resumeSubText {
+  color: #2a2a2a;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0;
+}
+/*____________________________________________________________________________________*/
 /* Projects */
 .projectOneTitle {
-   display: none;
+  display: none;
 }
+
 .projectTwoTitle {
   display: none;
 }
+
 .projectThreeTitle {
-   display: none;
+  display: none;
 }
+
 .projectFourTitle {
   display: none;
 }
+
 .projectFiveTitle {
-   display: none;
+  display: none;
 }
+
 .projectSixTitle {
   display: none;
 }
-@media (max-width:719px){
+
+@media (max-width:719px) {
   .projectOneTitle {
-     display: initial;
+    display: initial;
   }
+
   .projectTwoTitle {
     display: initial;
   }
+
   .projectThreeTitle {
-     display: initial;
+    display: initial;
   }
+
   .projectFourTitle {
     display: initial;
   }
+
   .projectFiveTitle {
-     display: initial;
+    display: initial;
   }
+
   .projectSixTitle {
     display: initial;
   }
 }
+
 /*____________________________________________________________________________________*/
 /* footer */
 footer {
@@ -151,37 +199,39 @@ footer {
   height: auto;
 }
 
-
 /*____________________________________________________________________________________*/
 /* Backgrounds */
-
 .backgroundsOne {
-  background: url(../img/background-black-and-white-black-and-white-963278.jpg);
+  background: url(../img/Canva-Low_Angle_View_of_Sky.jpg);
   width: 100%;
   background-position: center center;
   background-size: cover;
-  height: 200px;
+  height: 250px;
   z-index: 3;
 }
+
 .backgroundsTwo {
-  background: url(../img/background-black-and-white-black-and-white-963278.jpg);
+  background: url(../img/Canva-Empty_Concrete_Building_Near_Road.jpg);
   width: 100%;
   background-position: center center;
   background-size: cover;
-  height: 200px;
+  height: 250px;
+  z-index: 3;
+}
+
+.backgroundsThree {
+  background: url(../img/Canva-Grayscale_Photography_of_Building.jpg);
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 250px;
   z-index: 3;
 }
 /*____________________________________________________________________________________*/
-hr {
-  width: 150px;
-  border-width: 3px;
-  border-color: #291d07;
-}
 ul, li {
   list-style: none;
-}
-.mx-auto {
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 /*____________________________________________________________________________________*/
@@ -216,6 +266,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Vidaloka', serif;
 }
