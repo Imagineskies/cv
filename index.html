@@ -29,22 +29,50 @@
 
 <body>
 
-  <header class="masthead">
-    <div class="container">
-      <div class="row">
+  <section id="loadingScreen" class="shown overhidden">
+    <div id="container">
+      <div class="row my-auto">
         <div class="col-lg-10 mx-auto">
-          <h1>Rayna Weeden</h1>
+          <!-- MUTLI SPINNER -->
+          <div>
+            <div class="multi-spinner-container">
+              <div class="multi-spinner">
+                <div class="multi-spinner">
+                  <div class="multi-spinner">
+                    <div class="multi-spinner">
+                      <div class="multi-spinner">
+                        <div class="multi-spinner">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-10 mx-auto text-center headLinks">
-        <a href="#about" class="sliding-link">about</a>
-        <a href="#projects" class="sliding-link">projects</a>
-        <a href="#photos" class="sliding-link">photos</a>
-        <a href="#resume" class="sliding-link">resume</a>
-        <a href="#contacts" class="sliding-link">contacts</a>
-      </div>
     </div>
-  </header>
+  </section>
+
+  <main role="main" id="main" class="hidden ">
+
+    <header class="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1>Rayna Weeden</h1>
+          </div>
+        </div>
+        <div class="col-lg-10 mx-auto text-center headLinks">
+          <a href="#about" class="sliding-link">about</a>
+          <a href="#projects" class="sliding-link">projects</a>
+          <a href="#photos" class="sliding-link">photos</a>
+          <a href="#resume" class="sliding-link">resume</a>
+          <a href="#contacts" class="sliding-link">contact</a>
+        </div>
+      </div>
+    </header>
 
     <section id="about">
       <div class="container">
@@ -189,10 +217,9 @@
           <div id="resumeMain">
             <div class="col-lg-10 mx-auto">
               <h2 style="font-weight: 600;" class=" text-center">Resume</h2>
+              <hr>
             </div>
             <div class="mx-auto">
-              <hr>
-
               <!-- Education -->
 
               <section id="resumeEducation" class="col-lg-10 mx-auto">
@@ -248,7 +275,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2 style="font-weight: 600;">Contacts</h2>
+            <h2 style="font-weight: 600;">Contact</h2>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <h4>Rayna Weeden</h4>
@@ -264,6 +291,8 @@
         </div>
       </div>
     </section>
+
+  </main>
 
   <!-- Plugin JavaScript -->
   <script src="js/jquery.min.js"></script>
