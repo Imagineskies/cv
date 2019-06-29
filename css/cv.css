@@ -250,39 +250,7 @@ footer {
   height: auto;
 }
 
-/*____________________________________________________________________________________*/
-/* Backgrounds */
-.backgroundsOne {
-  background: url(../img/Canva-Low_Angle_View_of_Sky.jpg);
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
-}
 
-.backgroundsTwo {
-  background: url(../img/Canva-Empty_Concrete_Building_Near_Road.jpg);
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
-}
-
-.backgroundsThree {
-  background: url(../img/Canva-Grayscale_Photography_of_Building.jpg);
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
-}
-
-.backgroundsFour {
-  background: url(../img/Canva-Grayscale_Photography_of_Pedestal_Balustrade.jpg);
-  width: 100%;
-  background-position: center center;
-  background-size: cover;
-  height: 250px;
-}
 /*____________________________________________________________________________________*/
 ul, li {
   list-style: none;
