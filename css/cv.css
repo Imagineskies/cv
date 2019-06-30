@@ -164,9 +164,6 @@ nav#menuTemp a {
   nav#menuTemp {
     padding: 0;
   }
-  .fa-bars {
-    font-size: 32px;
-  }
 }
 /*____________________________________________________________________________________*/
 /* Sections */
@@ -184,6 +181,16 @@ nav#menuTemp a {
   width: 100%;
   height: 450px;
   border: none;
+}
+.socialmedia {
+  display: block;
+}
+.socialmedia * {
+  padding: 25px;
+}
+.fab {
+  font-size: 32px;
+  color: #000000;
 }
 hr {
   width: 100%;
