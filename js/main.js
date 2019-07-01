@@ -12,3 +12,14 @@ window.onload = function() {
   loadingScreen.classList.remove('shown', 'overhidden');
   loadingScreen.classList.add('hidden');
 }
+
+$('#menuButton').click(function() {
+  var nav = document.getElementById('menuTemp');
+  if (nav.classList.contains(".menuColorBlack")) {
+    nav.classList.remove('menuColorBlack');
+    nav.classList.add('menuColorWhite');
+  } else {
+    nav.classList.add('menuColorBlack');
+    nav.classList.remove('menuColorWhite');
+  }
+})

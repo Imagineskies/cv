@@ -157,14 +157,28 @@ nav#menuTemp a {
 @media (max-width:1199px) {
   nav#menuTemp {
     background-color: #FFFFFF;
-    width: auto;
-    margin: 25px;
+    width: 100%;
     padding: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030
   }
-  nav#menuTemp {
-    padding: 0;
+  #menuDrop {
+    font-size: 32px;
+    color: #000000;
+  }
+  .menuColorBlack * {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+  }
+  .menuColorWhite * {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
   }
 }
+
 /*____________________________________________________________________________________*/
 /* Sections */
 #projects, #about, #contacts, #photos {
