@@ -5,14 +5,6 @@ $(".sliding-link").click(function(e) {
     $('html,body').animate({scrollTop: $(aid).offset().top},1500);
 });
 
-window.onload = function() {
-  var main = document.getElementById('main');
-  var loadingScreen = document.getElementById('loadingScreen');
-  main.classList.remove('hidden');
-  loadingScreen.classList.remove('shown', 'overhidden');
-  loadingScreen.classList.add('hidden');
-}
-
 $('#menuButton').click(function() {
   var nav = document.getElementById('menuTemp');
   if (nav.classList.contains(".menuColorBlack")) {

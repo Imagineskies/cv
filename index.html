@@ -26,6 +26,16 @@
   <link href="css/animate.min.css" rel="stylesheet">
   <link href="css/imagehover/imagehover.css" rel="stylesheet">
 
+  <script>
+    window.onload = function() {
+      var main = document.getElementById('main');
+      var loadingScreen = document.getElementById('loadingScreen');
+      main.classList.remove('hidden');
+      loadingScreen.classList.remove('shown', 'overhidden');
+      loadingScreen.classList.add('hidden');
+    }
+  </script>
+
 </head>
 
 <body>
@@ -147,7 +157,7 @@
         </div>
         <div class="row">
           <div class="col-sm-4">
-            <h5 class="projectOneTitle">Lions Inside AMV</h5>
+            <h5 class="projectTitle">Lions Inside AMV</h5>
             <figure class="imghvr-fade">
               <img src="img/projects/LionsInside.png" alt="" height="199" width="354">
               <figcaption class="mx-auto">
@@ -157,7 +167,7 @@
             </figure>
           </div>
           <div class="col-sm-4">
-            <h5 class="projectTwoTitle">Midnight Gameplay</h5>
+            <h5 class="projectTitle">Midnight Gameplay</h5>
             <figure class="imghvr-fade">
               <img src="img/projects/Lonewolf.png" alt="" height="199" width="354">
               <figcaption class="mx-auto">
@@ -167,7 +177,7 @@
             </figure>
           </div>
           <div class="col-sm-4">
-            <h5 class="projectThreeTitle">Cloak & Dagger AMV</h5>
+            <h5 class="projectTitle">Cloak & Dagger AMV</h5>
             <figure class="imghvr-fade">
               <img src="img/projects/Cloak&Dagger.png" alt="" height="199" width="354">
               <figcaption class="mx-auto">
@@ -177,7 +187,17 @@
             </figure>
           </div>
           <div class="col-sm-4">
-            <h5 class="projectThreeTitle">Tumblr About Page</h5>
+            <h5 class="projectTitle">Reserve (AMV)</h5>
+            <figure class="imghvr-fade">
+              <img src="img/projects/KillLAKILL.png" alt="..." height="199" width="354">
+              <figcaption class="mx-auto">
+                Reserve AMV
+              </figcaption>
+              <a href="projects/killlakill.html"></a>
+            </figure>
+          </div>
+          <div class="col-sm-4">
+            <h5 class="projectTitle">Tumblr About Page</h5>
             <figure class="imghvr-fade">
               <img src="img/projects/1.png" alt="..." height="199" width="354">
               <figcaption class="mx-auto">
@@ -187,7 +207,7 @@
             </figure>
           </div>
           <div class="col-sm-4">
-            <h5 class="projectFourTitle">Human Diseases Research Projects</h5>
+            <h5 class="projectTitle">Human Diseases Research Projects</h5>
             <figure class="imghvr-fade">
               <img src="img/projects/2.png" alt="..." height="199" width="354">
               <figcaption class="mx-auto">
@@ -196,8 +216,8 @@
               <a href="projects/hdrp.html"></a>
             </figure>
           </div>
-          <div class="col-sm-4">
-            <h5 class="projectFourTitle">Civil War Project</h5>
+          <div class="col-sm-4 mx-auto">
+            <h5 class="projectTitle">Civil War Project</h5>
             <figure class="imghvr-fade">
               <img src="img/projects/3.png" alt="..." height="199" width="354">
               <figcaption class="mx-auto">
@@ -259,7 +279,8 @@
             <h2 style="font-weight: 600">Music</h2>
           </div>
           <div class="col-lg-10 mx-auto">
-            <iframe class="soundcloud" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/177141092&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <iframe class="soundcloud" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/177141092&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
           </div>
         </div>
       </div>

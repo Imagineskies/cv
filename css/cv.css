@@ -243,52 +243,12 @@ hr {
 }
 /*____________________________________________________________________________________*/
 /* Projects */
-.projectOneTitle {
-  display: none;
-}
-
-.projectTwoTitle {
-  display: none;
-}
-
-.projectThreeTitle {
-  display: none;
-}
-
-.projectFourTitle {
-  display: none;
-}
-
-.projectFiveTitle {
-  display: none;
-}
-
-.projectSixTitle {
+.projectTitle {
   display: none;
 }
 
 @media (max-width:719px) {
-  .projectOneTitle {
-    display: initial;
-  }
-
-  .projectTwoTitle {
-    display: initial;
-  }
-
-  .projectThreeTitle {
-    display: initial;
-  }
-
-  .projectFourTitle {
-    display: initial;
-  }
-
-  .projectFiveTitle {
-    display: initial;
-  }
-
-  .projectSixTitle {
+  .projectTitle {
     display: initial;
   }
 }
