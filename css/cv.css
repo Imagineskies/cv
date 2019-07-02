@@ -54,7 +54,7 @@ body, html {
 .overhidden {
   overflow: hidden;
 }
-#loadingScreen {
+.centerPadding {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
 }
@@ -108,8 +108,6 @@ body, html {
 }
 /*____________________________________________________________________________________*/
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
   background-image: url(../img/background.png);
   background-position: center center;
   background-size: cover;
