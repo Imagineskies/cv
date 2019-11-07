@@ -227,6 +227,10 @@ hr {
   text-transform: uppercase;
   padding: 5px;
 }
+
+h5.resumeSubTitles {
+  font-size: 24px;
+}
 .resumeSubTitlesClass {
   color: #000000;
   font-size: 20px;
