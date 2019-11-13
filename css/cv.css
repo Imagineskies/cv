@@ -254,6 +254,55 @@ h5.resumeSubTitles {
     display: initial;
   }
 }
+
+#projects .col-sm-4 {
+  position: relative;
+  width: 50%;
+}
+
+#projects .col-sm-4:hover .projectOverlay {
+  opacity: 1;
+}
+
+.projectTitle {
+  display: none;
+}
+
+.projectOverlayTitle {
+  position: absolute;
+  color: #FFFFFF;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projectOverlay {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 15px;
+  right: 0;
+  height: 199px;
+  width: 354px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #2E2E2E;
+}
+
+.projectIcon {
+  margin: 10px auto;
+}
+
+  #projectIcon .col-sm-4 {
+    position: static;
+    display: block;
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+
 /*____________________________________________________________________________________*/
 /* footer */
 footer {
