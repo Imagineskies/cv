@@ -31,6 +31,7 @@
       main.classList.remove('hidden');
       loadingScreen.classList.remove('shown', 'overhidden');
       loadingScreen.classList.add('hidden');
+      setHeaderHeight()
     }
   </script>
 
@@ -66,7 +67,7 @@
 
   <main role="main" id="main" class="hidden ">
 
-    <header class="masthead centerPadding">
+    <header class="masthead">
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
@@ -146,80 +147,84 @@
       <!--Photo by Pixabay-->
     </div>
 
-    <section id="projects">
+    <section id="resume">
       <div class="container">
         <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2 style="font-weight: 600;">Projects</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h5 class="projectTitle">Lions Inside AMV</h5>
-            <a href="projects/lionsinside.html">
-              <img class="projectIcon" src="img/projects/LionsInside.png" alt="" height="199" width="354">
-              <div class="projectOverlay">
-                  <h5 class="projectOverlayTitle">Lions Inside AMV</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <h5 class="projectTitle">Midnight Gameplay</h5>
-            <a href="projects/lonewolf.html">
-              <img class="projectIcon" src="img/projects/Lonewolf.png" alt="" height="199" width="354">
-              <div class="projectOverlay">
-                <h5 class="projectOverlayTitle">Midnight Gameplay</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <h5 class="projectTitle">Cloak & Dagger AMV</h5>
-            <a href="projects/cloakdagger.html">
-              <img class="projectIcon" src="img/projects/Cloak&Dagger.png" alt="" height="199" width="354">
-              <div class="projectOverlay">
-                <h5 class="projectOverlayTitle">Cloak & Dagger AMV</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <h5 class="projectTitle">Reserve (AMV)</h5>
-            <a href="projects/killlakill.html">
-              <img class="projectIcon" src="img/projects/KillLAKILL.png" alt="..." height="199" width="354">
-              <div class="projectOverlay">
-                <h5 class="projectOverlayTitle">Reserve AMV</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <h5 class="projectTitle">Tumblr About Page</h5>
-            <a href="projects/tumblraboutpage.html">
-              <img class="projectIcon" src="img/projects/1.png" alt="..." height="199" width="354">
-              <div class="projectOverlay">
-                <h5 class="projectOverlayTitle">Tumblr About Page</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <h5 class="projectTitle">Human Diseases Research Projects</h5>
-            <a href="projects/hdrp.html">
-              <img class="projectIcon" src="img/projects/2.png" alt="..." height="199" width="354">
-              <div class="projectOverlay">
-                <h5 class="projectOverlayTitle">Human Diseases Research Projects</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-4 mx-auto">
-            <h5 class="projectTitle">Civil War Project</h5>
-            <a href="projects/cwp.html">
-              <img class="projectIcon" src="img/projects/3.png" alt="..." height="199" width="354">
-              <div class="projectOverlay">
-                <h5 class="projectOverlayTitle">Civil War Project</h5>
-              </div>
-            </a>
+          <div id="resumeNewMain">
+            <canvas class="resumeGraph"></canvas>
           </div>
         </div>
       </div>
     </section>
+
+
+    <!--
+    <section id="resume">
+      <div class="container">
+        <div class="row">
+          <div id="resumeMain">
+            <div class="col-lg-10 mx-auto">
+              <h2 style="font-weight: 600;" class=" text-center">Resume</h2>
+              <hr>
+            </div>
+            <div class="mx-auto">
+
+
+              <section id="resumeEducation" class="col-lg-10 mx-auto">
+                <h4 class="resumeSubTitles text-left">Education</h4>
+                <div>
+                  <h6 class="resumeSubTitlesClass text-left">
+                    <b>Cass Technical High School</b>, 2501 2nd Ave, Detroit, MI 48201
+                  </h6>
+                  <p class="resumeSubText text-left">September 2016 - June 2017</p>
+                  <p class="resumeSubText text-left">Here I completed the 9th grade, and was in multiple clubs. A few of the clubs I was apart of were Anime Club, Japanese Club, Graphic Novel Club, The Outdoors Club, and Video Game Club.<p>
+                </div>
+                <div>
+                  <h6 class="resumeSubTitlesClass text-left">
+                    <b>SER YouthBuild Learning Academy</b>, 5200 Stecker, Dearborn, MI 48216
+                  </h6>
+                  <p class="resumeSubText text-left">September 2018 - Current</p>
+                  <p class="resumeSubText text-left">I am currently attending SER Metro YouthBuild Academy. Here I’m completing the remainder of my high school diploma as I pursue a career in computer IT.<p>
+                </div>
+              </section>
+
+
+              <section id="resumeSkills" class="col-lg-10 mx-auto">
+                <h4 class="resumeSubTitles text-right">Skills</h4>
+                <p class="resumeSubText text-right">I have 4 years of experience in HTML5, CSS3, and 1 year of experience in JavaScript and Python.</p>
+                <p class="resumeSubText text-right">I’m at an intermediate level with photography.</p>
+                <p class="resumeSubText text-right">I’m an advocate for the LGBTQ+ Community.</p>
+              </section>
+
+
+              <section id="resumeCerts" class="col-lg-10 mx-auto">
+                <h4 class="resumeSubTitles text-left">Certifications</h4>
+                <h5 class="resumeSubTitles text-left">Microsoft Technology Associate</h5>
+                <p class="resumeSubText text-left">HTML5 Application Development Fundamentals</p>
+                <p class="resumeSubText text-left">Introduction to Programming using HTML and CSS</p>
+                <p class="resumeSubText text-left">Introduction to Programming using JavaScript</p>
+                <p class="resumeSubText text-left">Microsoft Office Word 2016: Core Document Creation, Collaboration and Communication</p>
+                <h5 class="resumeSubTitles text-left">Others</h5>
+                <p class="resumeSubText text-left">First Aid, CPR, and AED</p>
+              </section>
+
+
+              <section id="resumeHobbies" class="col-lg-10 mx-auto">
+                <h4 class="resumeSubTitles text-right">Hobbies</h4>
+                <p class="resumeSubText text-right">I produce my own music using Ableton, Audiotool, and/or Music Maker Jam.</p>
+                <p class="resumeSubText text-right">I write poetry, short stories, and journal entries.</p>
+                <p class="resumeSubText text-right">I enjoy watching anime, gaming,and coding</p>
+                <p class="resumeSubText text-right">I like camping, hiking, and nature as a whole.</p>
+              </section>
+            </div>
+            <div class="col-lg-10 mx-auto">
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
 
     <div>
       <img class="imgDivider" src="img/Canva-Empty_Concrete_Building_Near_Road.jpg" alt="...">
@@ -294,71 +299,76 @@
       <!--Photo by Pixabay-->
     </div>
 
-
-    <section id="resume">
+    <section id="projects">
       <div class="container">
         <div class="row">
-          <div id="resumeMain">
-            <div class="col-lg-10 mx-auto">
-              <h2 style="font-weight: 600;" class=" text-center">Resume</h2>
-              <hr>
-            </div>
-            <div class="mx-auto">
-              <!-- Education -->
-
-              <section id="resumeEducation" class="col-lg-10 mx-auto">
-                <h4 class="resumeSubTitles text-left">Education</h4>
-                <div>
-                  <h6 class="resumeSubTitlesClass text-left">
-                    <b>Cass Technical High School</b>, 2501 2nd Ave, Detroit, MI 48201
-                  </h6>
-                  <p class="resumeSubText text-left">September 2016 - June 2017</p>
-                  <p class="resumeSubText text-left">Here I completed the 9th grade, and was in multiple clubs. A few of the clubs I was apart of were Anime Club, Japanese Club, Graphic Novel Club, The Outdoors Club, and Video Game Club.<p>
-                </div>
-                <div>
-                  <h6 class="resumeSubTitlesClass text-left">
-                    <b>SER YouthBuild Learning Academy</b>, 5200 Stecker, Dearborn, MI 48216
-                  </h6>
-                  <p class="resumeSubText text-left">September 2018 - Current</p>
-                  <p class="resumeSubText text-left">I am currently attending SER Metro YouthBuild Academy. Here I’m completing the remainder of my high school diploma as I pursue a career in computer IT.<p>
-                </div>
-              </section>
-
-              <!-- Skills -->
-
-              <section id="resumeSkills" class="col-lg-10 mx-auto">
-                <h4 class="resumeSubTitles text-right">Skills</h4>
-                <p class="resumeSubText text-right">I have 4 years of experience in HTML5, CSS3, and 1 year of experience in JavaScript and Python.</p>
-                <p class="resumeSubText text-right">I’m at an intermediate level with photography.</p>
-                <p class="resumeSubText text-right">I’m an advocate for the LGBTQ+ Community.</p>
-              </section>
-
-              <!-- Certifications -->
-
-              <section id="resumeCerts" class="col-lg-10 mx-auto">
-                <h4 class="resumeSubTitles text-left">Certifications</h4>
-                <h5 class="resumeSubTitles text-left">Microsoft Technology Associate</h5>
-                <p class="resumeSubText text-left">HTML5 Application Development Fundamentals</p>
-                <p class="resumeSubText text-left">Introduction to Programming using HTML and CSS</p>
-                <p class="resumeSubText text-left">Introduction to Programming using JavaScript</p>
-                <p class="resumeSubText text-left">Microsoft Office Word 2016: Core Document Creation, Collaboration and Communication</p>
-                <h5 class="resumeSubTitles text-left">Others</h5>
-                <p class="resumeSubText text-left">First Aid, CPR, and AED</p>
-              </section>
-
-              <!-- Hobbies -->
-
-              <section id="resumeHobbies" class="col-lg-10 mx-auto">
-                <h4 class="resumeSubTitles text-right">Hobbies</h4>
-                <p class="resumeSubText text-right">I produce my own music using Ableton, Audiotool, and/or Music Maker Jam.</p>
-                <p class="resumeSubText text-right">I write poetry, short stories, and journal entries.</p>
-                <p class="resumeSubText text-right">I enjoy watching anime, gaming,and coding</p>
-                <p class="resumeSubText text-right">I like camping, hiking, and nature as a whole.</p>
-              </section>
-            </div>
-            <div class="col-lg-10 mx-auto">
-              <hr>
-            </div>
+          <div class="col-lg-10 mx-auto">
+            <h2 style="font-weight: 600;">Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <h5 class="projectTitle">Lions Inside AMV</h5>
+            <a href="projects/lionsinside.html">
+              <img class="projectIcon" src="img/projects/LionsInside.png" alt="" height="199" width="354">
+              <div class="projectOverlay">
+                  <h5 class="projectOverlayTitle">Lions Inside AMV</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <h5 class="projectTitle">Midnight Gameplay</h5>
+            <a href="projects/lonewolf.html">
+              <img class="projectIcon" src="img/projects/Lonewolf.png" alt="" height="199" width="354">
+              <div class="projectOverlay">
+                <h5 class="projectOverlayTitle">Midnight Gameplay</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <h5 class="projectTitle">Cloak & Dagger AMV</h5>
+            <a href="projects/cloakdagger.html">
+              <img class="projectIcon" src="img/projects/Cloak&Dagger.png" alt="" height="199" width="354">
+              <div class="projectOverlay">
+                <h5 class="projectOverlayTitle">Cloak & Dagger AMV</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <h5 class="projectTitle">Reserve (AMV)</h5>
+            <a href="projects/killlakill.html">
+              <img class="projectIcon" src="img/projects/KillLAKILL.png" alt="..." height="199" width="354">
+              <div class="projectOverlay">
+                <h5 class="projectOverlayTitle">Reserve AMV</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <h5 class="projectTitle">Tumblr About Page</h5>
+            <a href="projects/tumblraboutpage.html">
+              <img class="projectIcon" src="img/projects/1.png" alt="..." height="199" width="354">
+              <div class="projectOverlay">
+                <h5 class="projectOverlayTitle">Tumblr About Page</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4">
+            <h5 class="projectTitle">Human Diseases Research Projects</h5>
+            <a href="projects/hdrp.html">
+              <img class="projectIcon" src="img/projects/2.png" alt="..." height="199" width="354">
+              <div class="projectOverlay">
+                <h5 class="projectOverlayTitle">Human Diseases Research Projects</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 mx-auto">
+            <h5 class="projectTitle">Civil War Project</h5>
+            <a href="projects/cwp.html">
+              <img class="projectIcon" src="img/projects/3.png" alt="..." height="199" width="354">
+              <div class="projectOverlay">
+                <h5 class="projectOverlayTitle">Civil War Project</h5>
+              </div>
+            </a>
           </div>
         </div>
       </div>

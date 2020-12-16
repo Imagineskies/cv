@@ -1,3 +1,38 @@
+'use strict';
+// Variable
+var resumeGraph = document.getElementsByClassName('resumeGraph');
+var ctx = resumeGraph.getContex('2d');
+
+// Declarations
+resumeGraph.width = 300;
+resumeGraph.height = 300;
+
+// Constants
+
+
+
+/*
+____________________________________________________________________________________
+Functions
+____________________________________________________________________________________
+*/
+
+
+function setHeaderHeight() {
+  var height = screen.height;
+  document.documentElement.style.setProperty("--header-height", height + 'px');
+  console.log(height);
+}
+
+
+
+
+/*
+____________________________________________________________________________________
+Event Listeners
+____________________________________________________________________________________
+*/
+
 $(".sliding-link").click(function(e) {
     e.preventDefault();
     var aid = $(this).attr("href");
