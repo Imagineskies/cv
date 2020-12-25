@@ -248,6 +248,11 @@ h5.resumeSubTitles {
   font-weight: 300;
   padding: 0;
 }
+
+#resume .list-group-item {
+  padding: 10px 0;
+  border: 0;
+}
 /*____________________________________________________________________________________*/
 /* Projects */
 
@@ -327,6 +332,7 @@ footer {
 }
 
 /*____________________________________________________________________________________*/
+
 ul, li {
   list-style: none;
   padding: 0;
@@ -384,7 +390,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
 }
 
-.p, p {
+.p, p, li, .li {
   font-size: 1.6rem;
   font-family: 'Raleway', sans-serif;
 }
