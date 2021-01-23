@@ -63,6 +63,7 @@ body, html {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
 }
+
 /*____________________________________________________________________________________*/
 /*
   Load Lab
@@ -111,6 +112,7 @@ body, html {
         transform: rotate(360deg);
     }
 }
+
 /*____________________________________________________________________________________*/
 header.masthead {
   background-image: url(../img/background.png);
