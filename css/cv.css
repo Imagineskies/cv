@@ -185,11 +185,11 @@ nav#menuTemp a {
 /*____________________________________________________________________________________*/
 /* Sections */
 
-#projects, #about, #contacts, #photos {
+#videos, #websites, #about, #contacts, #photos {
   background-color: #FFFFFF;
   height: auto;
 }
-#projects *, #about *, #contacts * {
+#videos, #websites *, #about *, #contacts * {
   text-align: center;
 }
 #photos, #music {
@@ -200,13 +200,20 @@ nav#menuTemp a {
   height: 450px;
   border: none;
 }
+
+.sectionParagraph {
+  font-size: 1.8rem;
+}
+
 .socialmedia * {
   padding: 25px;
 }
+
 .fab {
   font-size: 32px;
   color: #000000;
 }
+
 hr {
   width: 100%;
   border-width: 5px;
@@ -253,7 +260,7 @@ h5.resumeSubTitles {
   border: 0;
 }
 /*____________________________________________________________________________________*/
-/* Projects */
+/* websites & videos */
 
 .projectTitle {
   display: none;
@@ -265,7 +272,7 @@ h5.resumeSubTitles {
   }
 }
 
-#projects .col-sm-4 {
+#websites .col-sm-4, #videos .col-sm-4 {
   position: relative;
   width: 100%;
   margin-left: auto;
@@ -276,7 +283,7 @@ h5.resumeSubTitles {
   padding: 0;
 }
 
-#projects .col-sm-4:hover .projectOverlay {
+#websites .col-sm-4:hover .projectOverlay, #videos .col-sm-4:hover .projectOverlay {
   opacity: 1;
 }
 
@@ -310,20 +317,20 @@ h5.resumeSubTitles {
   margin: 10px auto;
 }
 
-  #projectIcon .col-sm-4 {
-    position: static;
-    display: block;
-    width: 100%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
+.projectIcon .col-sm-4 {
+  position: static;
+  display: block;
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 @media (min-width: 719px) {
-  #inner-projects {
+  #inner-websites {
     flex-direction: row;
   }
 
-  #projects .col-sm-4 {
+  #websites .col-sm-4, #videos .col-sm-4 {
     flex: 0 0 50%;
     max-width: 50%;
     margin: 0;
@@ -336,11 +343,11 @@ h5.resumeSubTitles {
 }
 
 @media (min-width: 1199px) {
-  #inner-projects {
+  #inner-websites {
     flex-direction: row;
   }
 
-  #projects .col-sm-4 {
+  #websites .col-sm-4, #videos .col-sm-4 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     margin: 0;
